@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Rectangular</title>
+</head>
+<body>
+    <h1>Area of rectangular</h1>
+    <input type="text" id="length" placeholder="length">
+    <input type="text" id="width" placeholder="width">
+    <button onclick="send()">send</button>
+    <h1 id="show"></h1>
+    <script>
+        function send(){
+            var len=document.getElementById("length")
+            var wid=document.getElementById("width")
+            var Area=Number(len.value)*Number(wid.value)
+            document.getElementById("show").innerHTML=Area+"Squre"
+        }
+    </script>
+    
+</body>
+</html>
